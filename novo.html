@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome para ícones -->
+    <title>Personal Online</title>
+</head>
+<body>
+    <header>
+        <h1>Personal Online</h1>
+    </header>
+
+    <main>
+        <section>
+            <form id="form-pesquisa" onsubmit="event.preventDefault(); pesquisar();">
+                <div class="input-container">
+                    <i class="fas fa-search"></i> <!-- Ícone de lupa -->
+                    <input type="text" placeholder="Pesquise pelo exercício" id="campo-pesquisa" oninput="pesquisar()">
+                </div>
+                <button type="submit">Pesquisar</button>
+            </form>
+        </section>
+   
+        <!-- Resultados da pesquisa serão exibidos aqui -->
+        <section id="resultados-pesquisa">
+        </section>
+    
+    </main>
+    
+    <footer>
+        <p>2024 - Personal Online. Todos os direitos reservados. Site criado por Dariu T. Pereira.</p>
+        <p>Entre em contato pelo email: dariu.pk@gmail.com</p>
+    </footer>
+
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
